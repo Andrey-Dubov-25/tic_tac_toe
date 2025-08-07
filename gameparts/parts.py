@@ -1,7 +1,8 @@
 # parts.py
 
 class Board:
-
+    """Класс, который описывает игровое поле"""
+    
     field_size = 3
 
     def __init__(self):
