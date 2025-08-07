@@ -12,10 +12,5 @@ def main():
     game.display()
 
 # А вот вызов этой функции.
-#if __name__ == '__main__':
-    #main()
-
-game = Board()
-
-
-print(ismethod(game.display))
+if __name__ == '__main__':
+    main() 
