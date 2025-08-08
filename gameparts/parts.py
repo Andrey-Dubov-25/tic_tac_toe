@@ -18,6 +18,13 @@ class Board:
             print('|'.join(row))
             print('-' * 5)
     
+    def is_board_full(self):
+        for i in range(self.field_size):
+            for j in range(self.field_size):
+                if self.board[i][j] == ' ':
+                    return False
+        return True
+
     def __str__(self):
         return (
             'Объект игрового поля размером ' 
