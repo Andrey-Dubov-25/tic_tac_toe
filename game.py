@@ -10,7 +10,7 @@ def main():
     game.display()
     row = int(input('Введите номер строки: '))
     if row < 0 or row >= game.field_size:
-        raise FieldIndexError
+        raise FieldIndexError('Введенное значение за границами игрового поля!')
     column = int(input('Введите номер столбца: '))
     game.make_move(row, column, 'X')
     print('Ход сделан!')
