@@ -1,6 +1,7 @@
-file = open('example.txt', 'w', encoding='utf-8')
+file = open("example.txt", "r", encoding="utf-8")
 
-file.write('Зевну, укроюсь с головою,\nбудильник заведу на март.\n')
+content = file.read(12)
+
+print(content)
 
 file.close()
-
