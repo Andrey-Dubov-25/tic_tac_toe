@@ -38,6 +38,7 @@ def main():
             except CellOccupiedError:
                 print('Ячейка занята')
                 print('Введите другие координаты.')
+                continue
             except ValueError:
                 print('Буквы вводить нельзя. Только числа.')
                 print('Введите значения для строки и столбца заново.')
@@ -55,8 +56,8 @@ def main():
             print(f'Победили {current_player}.')
             running = False
         elif game.is_board_full():
-            print('Ничья')
-        running = False
+            print('Ничья!')
+            running = False
 
         current_player = 'O' if current_player == 'X' else 'X'
 
