@@ -7,7 +7,9 @@ from gameparts import Board
 def main():
     game = Board()
     game.display()
-    game.make_move(1, 1, 'X')
+    row = int(input('Введите номер строки: '))
+    column = int(input('Введите номер столбца: '))
+    game.make_move(row, column, 'X')
     print('Ход сделан!')
     game.display()
 
