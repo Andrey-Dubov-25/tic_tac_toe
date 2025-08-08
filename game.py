@@ -12,6 +12,8 @@ def main():
     if row < 0 or row >= game.field_size:
         raise FieldIndexError('Введенное значение за границами игрового поля!')
     column = int(input('Введите номер столбца: '))
+    if column < 0 or column >= game.field_size:
+        raise FieldIndexError('Введенное значение за границами игрового поля!')
     game.make_move(row, column, 'X')
     print('Ход сделан!')
     game.display()
